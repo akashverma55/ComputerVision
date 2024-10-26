@@ -4,6 +4,7 @@ import numpy as np
 img = cv2.imread("OIP.jpeg")
 
 while True:
+    # hue, saturation, value
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     upper = np.array([130,225,225])
     lower = np.array([110,50,50])
